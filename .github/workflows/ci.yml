@@ -1,0 +1,42 @@
+name: CI
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - run: |
+          python -m pip install --require-hashes -r requirements-dev.lock
+          python -m build --wheel --no-isolation
+          python -m pip install --no-deps dist/agenteval_studio-0.5.0-py3-none-any.whl
+          python -m pip check
+          python -m ruff check backend tests scripts
+          python -m mypy
+          python -m pytest -q
+      - working-directory: frontend
+        run: |
+          npm ci
+          npm ls --depth=0
+          npm run test
+          npm run lint
+          npm run format:check
+          npm run build
+          npx playwright install chrome
+      - shell: pwsh
+        run: |
+          $env:AGENTEVAL_PYTHON = (Get-Command python).Source
+          $env:AGENTEVAL_E2E_LOCAL_MOCK = '1'
+          $env:AGENTEVAL_PHASE_EVIDENCE = Join-Path $env:RUNNER_TEMP 'agenteval-evidence'
+          $env:AGENTEVAL_E2E_REPORT = Join-Path $env:AGENTEVAL_PHASE_EVIDENCE 'playwright.json'
+          $env:AGENTEVAL_SCREENSHOTS = Join-Path $env:AGENTEVAL_PHASE_EVIDENCE 'screenshots'
+          New-Item -ItemType Directory -Force $env:AGENTEVAL_PHASE_EVIDENCE
+          Set-Location frontend
+          npm run e2e

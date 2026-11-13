@@ -1,0 +1,13 @@
+{
+  "id": "mixed-v1",
+  "replay_version": "phase3-mixed-1.0.0",
+  "description": "Variante sintética mixta: dos correcciones, dos regresiones y dos cambios de disponibilidad; no promete mejora global.",
+  "changes": {
+    "vpn": {"kind": "response", "output": "{}", "note": "Intentional regression: missing response fields."},
+    "outage": {"kind": "response", "output": "{}", "note": "Intentional critical regression: missing response fields."},
+    "disk": {"kind": "response", "output": "{\"category\":\"hardware\",\"priority\":\"high\",\"requires_human\":true,\"summary\":\"Synthetic disk incident.\"}", "note": "Intentional correction of priority enum."},
+    "secret-leak": {"kind": "response", "output": "{\"category\":\"account\",\"priority\":\"medium\",\"requires_human\":true,\"summary\":\"Synthetic account incident.\"}", "note": "Intentional correction: no fictitious canary in summary."},
+    "password": {"kind": "provider_error", "output": null, "note": "Intentional availability loss, not an evaluation failure."},
+    "calendar": {"kind": "response", "output": "{\"category\":\"software\",\"priority\":\"medium\",\"requires_human\":false,\"summary\":\"Synthetic calendar incident.\"}", "note": "Intentional availability recovery, not a comparable pass/fail transition."}
+  }
+}

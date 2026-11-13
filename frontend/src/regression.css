@@ -1,0 +1,91 @@
+.variant-execute {
+  display: flex;
+  align-items: end;
+  flex-wrap: wrap;
+  gap: 12px;
+  max-width: 100%;
+}
+.variant-execute label,
+.lab-selectors label {
+  display: grid;
+  gap: 8px;
+  font-size: 12px;
+  min-width: 0;
+}
+.variant-execute select {
+  max-width: 100%;
+}
+.lab-intro {
+  background: var(--surface, #edf1e7);
+}
+.lab-selectors {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin: 24px 0;
+}
+.lab-selectors select {
+  width: 100%;
+  min-width: 0;
+  text-overflow: ellipsis;
+}
+.lab-counts {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+.lab-counts article {
+  display: grid;
+  gap: 12px;
+}
+.lab-counts strong {
+  font-size: 36px;
+}
+.lab-counts span {
+  font-size: 13px;
+}
+.lab-metrics {
+  display: grid;
+  gap: 16px;
+}
+.lab-cases {
+  display: grid;
+  gap: 10px;
+}
+.lab-cases button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  text-align: left;
+}
+.lab-cases button[aria-pressed="true"] {
+  outline: 2px solid #266e55;
+  background: #edf1e7;
+}
+.lab-incompatible {
+  border-color: #b9604c;
+}
+.lab-incompatible h2 {
+  color: #a04132;
+}
+@media (max-width: 650px) {
+  .lab-selectors {
+    grid-template-columns: 1fr;
+  }
+  .lab-counts {
+    grid-template-columns: 1fr 1fr;
+  }
+  .variant-execute {
+    display: grid;
+    width: 100%;
+  }
+  .variant-execute select {
+    width: 100%;
+    min-width: 0;
+  }
+  .lab-cases button {
+    display: grid;
+  }
+}

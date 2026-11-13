@@ -1,0 +1,43 @@
+# Third-party notices
+
+MIT in LICENSE applies to original AgentEval code. Dependencies retain their own licenses. No Ollama runtime or model is distributed.
+
+- react 19.3.1: MIT; full notice: third_party/react/LICENSE
+- react-dom 19.3.1: MIT; full notice: third_party/react-dom/LICENSE
+- scheduler 0.28.0: MIT; full notice: third_party/scheduler/LICENSE
+- zod 4.6.7: MIT; full notice: third_party/zod/LICENSE
+- Python dependency annotated-doc 0.0.5: MIT; 1 legal files included.
+- Python dependency annotated-types 0.8.0: MIT; 1 legal files included.
+- Python dependency anyio 4.16.0: MIT; 1 legal files included.
+- Python dependency ast_serialize 0.13.1: MIT; 2 legal files included.
+- Python dependency build 1.6.1: MIT; 1 legal files included.
+- Python dependency click 8.5.0: BSD-3-Clause; 1 legal files included.
+- Python dependency colorama 0.4.6: License :: OSI Approved :: BSD License; 1 legal files included.
+- Python dependency fastapi 0.162.0: MIT; 1 legal files included.
+- Python dependency h11 0.16.0: License :: OSI Approved :: MIT License; 1 legal files included.
+- Python dependency hatchling 1.33.0: MIT; 1 legal files included.
+- Python dependency httpcore2 2.16.0: BSD-3-Clause; 1 legal files included.
+- Python dependency httpx2 2.16.0: BSD-3-Clause; 1 legal files included.
+- Python dependency idna 3.20: BSD-3-Clause; 1 legal files included.
+- Python dependency iniconfig 2.3.1: MIT; 1 legal files included.
+- Python dependency librt 0.16.0: MIT; 1 legal files included.
+- Python dependency mypy 2.4.1: MIT; 2 legal files included.
+- Python dependency mypy_extensions 1.2.0: MIT; 1 legal files included.
+- Python dependency opentelemetry-api 1.45.2: Apache-2.0; 1 legal files included.
+- Python dependency packaging 26.3: Apache-2.0 OR BSD-2-Clause; 3 legal files included.
+- Python dependency pathspec 1.1.1: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0); 1 legal files included.
+- Python dependency pluggy 1.7.0: License :: OSI Approved :: MIT License; 1 legal files included.
+- Python dependency pydantic 2.14.3: MIT; 1 legal files included.
+- Python dependency pydantic_core 2.50.4: MIT; 1 legal files included.
+- Python dependency Pygments 2.21.0: BSD-2-Clause; 2 legal files included.
+- Python dependency pyproject_hooks 1.3.3: MIT; 1 legal files included.
+- Python dependency pytest 9.2.0: MIT; 1 legal files included.
+- Python dependency ruff 0.17.3: MIT; 1 legal files included.
+- Python dependency SQLAlchemy 2.1.8: MIT; 2 legal files included.
+- Python dependency starlette 1.10.0: BSD-3-Clause; 1 legal files included.
+- Python dependency tomlkit 0.15.2: MIT; 1 legal files included.
+- Python dependency trove-classifiers 2026.9.21.13: License :: OSI Approved :: Apache Software License; 1 legal files included.
+- Python dependency truststore 0.10.5: MIT; 1 legal files included.
+- Python dependency typing_extensions 4.16.0: PSF-2.0; 1 legal files included.
+- Python dependency typing-inspection 0.4.5: MIT; 1 legal files included.
+- Python dependency uvicorn 0.54.0: BSD-3-Clause; 1 legal files included.

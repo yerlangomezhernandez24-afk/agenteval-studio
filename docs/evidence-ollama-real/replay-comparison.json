@@ -1,0 +1,2104 @@
+{
+  "report_version": "1.0",
+  "source_date_utc": "2026-11-07T19:02:03.632049+00:00",
+  "label": "REPLAY / SIMULATED OUTPUT",
+  "warning": "REPLAY / SIMULATED OUTPUT. Datos sint\u00e9ticos; latencia de replay local, no inferencia. Sin significaci\u00f3n estad\u00edstica ni certificaci\u00f3n universal de seguridad.",
+  "a_id": "bd9fed70-2a69-4e73-bd61-1fb3ed7b7697",
+  "b_id": "a5047656-831c-426c-a50c-e62ec35e643c",
+  "compatible": true,
+  "reasons": [],
+  "fingerprints": {
+    "a": {
+      "cases_hash": "9c5658c81fc2ae90eebc832d2ebf1b40e5ec34ebb415ff73ee11944f8c640cc6",
+      "dataset_hash": "f673b25cdab24b306f31d8afa5eb700d41708677cfc43d4776daaf1a7685b95f",
+      "replay_hash": "a554ebdd1427310414df00552f47ad875c01caf9dc3cb4f9847ae0daa6a41d2d",
+      "prompt_hash": "27231e78125cc1e7e6b6c7355d5751e0a34ea9111acae8afd70a88cddadbad70",
+      "engine_version": "0.1.1",
+      "criteria_version": "1.1",
+      "replay_version": "1.0.0",
+      "prompt_version": "1.0.0",
+      "provider": "ReplayProvider"
+    },
+    "b": {
+      "cases_hash": "9c5658c81fc2ae90eebc832d2ebf1b40e5ec34ebb415ff73ee11944f8c640cc6",
+      "dataset_hash": "ae452ab0c386ac0c7d26bfe24ce8834067d25a199976db536e6072c5718397a9",
+      "replay_hash": "774df947ce5fd1efcac60954c6f43a95ecfd755a2705e3249a73d9a1496d3899",
+      "prompt_hash": "27231e78125cc1e7e6b6c7355d5751e0a34ea9111acae8afd70a88cddadbad70",
+      "engine_version": "0.1.1",
+      "criteria_version": "1.1",
+      "replay_version": "phase3-mixed-1.0.0",
+      "prompt_version": "1.0.0",
+      "provider": "ReplayProvider"
+    }
+  },
+  "metrics_a": {
+    "total": 36,
+    "executed": 35,
+    "passed": 16,
+    "failed": 16,
+    "errors": 2,
+    "skipped": 1,
+    "not_evaluable": 1,
+    "pass_rate": {
+      "numerator": 16,
+      "denominator": 32,
+      "percent": 50.0,
+      "not_evaluable": 4
+    },
+    "criteria": {
+      "json_valid": {
+        "numerator": 28,
+        "denominator": 32,
+        "percent": 87.5,
+        "not_evaluable": 4
+      },
+      "schema_valid": {
+        "numerator": 21,
+        "denominator": 28,
+        "percent": 75.0,
+        "not_evaluable": 8
+      },
+      "category": {
+        "numerator": 25,
+        "denominator": 27,
+        "percent": 92.5925925925926,
+        "not_evaluable": 9
+      },
+      "priority": {
+        "numerator": 25,
+        "denominator": 27,
+        "percent": 92.5925925925926,
+        "not_evaluable": 9
+      },
+      "escalation": {
+        "numerator": 25,
+        "denominator": 26,
+        "percent": 96.15384615384616,
+        "not_evaluable": 10
+      },
+      "content": {
+        "numerator": 2,
+        "denominator": 4,
+        "percent": 50.0,
+        "not_evaluable": 32
+      }
+    },
+    "error_distribution": {
+      "timeout": 1,
+      "provider_error": 1
+    },
+    "critical_failures": [
+      "disk",
+      "payroll",
+      "locked-admin",
+      "secret-leak",
+      "missing-text"
+    ],
+    "latency_samples": 35,
+    "latency_median_ms": 0.0010998919606208801,
+    "latency_p95_ms": 0.004499917849898338
+  },
+  "metrics_b": {
+    "total": 36,
+    "executed": 35,
+    "passed": 16,
+    "failed": 16,
+    "errors": 2,
+    "skipped": 1,
+    "not_evaluable": 1,
+    "pass_rate": {
+      "numerator": 16,
+      "denominator": 32,
+      "percent": 50.0,
+      "not_evaluable": 4
+    },
+    "criteria": {
+      "json_valid": {
+        "numerator": 28,
+        "denominator": 32,
+        "percent": 87.5,
+        "not_evaluable": 4
+      },
+      "schema_valid": {
+        "numerator": 20,
+        "denominator": 28,
+        "percent": 71.42857142857143,
+        "not_evaluable": 8
+      },
+      "category": {
+        "numerator": 23,
+        "denominator": 25,
+        "percent": 92.0,
+        "not_evaluable": 11
+      },
+      "priority": {
+        "numerator": 24,
+        "denominator": 25,
+        "percent": 96.0,
+        "not_evaluable": 11
+      },
+      "escalation": {
+        "numerator": 23,
+        "denominator": 24,
+        "percent": 95.83333333333333,
+        "not_evaluable": 12
+      },
+      "content": {
+        "numerator": 3,
+        "denominator": 4,
+        "percent": 75.0,
+        "not_evaluable": 32
+      }
+    },
+    "error_distribution": {
+      "provider_error": 2
+    },
+    "critical_failures": [
+      "outage",
+      "payroll",
+      "locked-admin",
+      "missing-text"
+    ],
+    "latency_samples": 35,
+    "latency_median_ms": 0.00100000761449337,
+    "latency_p95_ms": 0.0035997945815324783
+  },
+  "rates": {
+    "pass_rate": {
+      "a": {
+        "numerator": 16,
+        "denominator": 32,
+        "percent": 50.0,
+        "not_evaluable": 4
+      },
+      "b": {
+        "numerator": 16,
+        "denominator": 32,
+        "percent": 50.0,
+        "not_evaluable": 4
+      },
+      "numerator_delta": 0,
+      "denominator_delta": 0,
+      "percentage_points": 0.0
+    },
+    "json_valid": {
+      "a": {
+        "numerator": 28,
+        "denominator": 32,
+        "percent": 87.5,
+        "not_evaluable": 4
+      },
+      "b": {
+        "numerator": 28,
+        "denominator": 32,
+        "percent": 87.5,
+        "not_evaluable": 4
+      },
+      "numerator_delta": 0,
+      "denominator_delta": 0,
+      "percentage_points": 0.0
+    },
+    "schema_valid": {
+      "a": {
+        "numerator": 21,
+        "denominator": 28,
+        "percent": 75.0,
+        "not_evaluable": 8
+      },
+      "b": {
+        "numerator": 20,
+        "denominator": 28,
+        "percent": 71.42857142857143,
+        "not_evaluable": 8
+      },
+      "numerator_delta": -1,
+      "denominator_delta": 0,
+      "percentage_points": -3.5714285714285694
+    },
+    "category": {
+      "a": {
+        "numerator": 25,
+        "denominator": 27,
+        "percent": 92.5925925925926,
+        "not_evaluable": 9
+      },
+      "b": {
+        "numerator": 23,
+        "denominator": 25,
+        "percent": 92.0,
+        "not_evaluable": 11
+      },
+      "numerator_delta": -2,
+      "denominator_delta": -2,
+      "percentage_points": -0.5925925925925952
+    },
+    "priority": {
+      "a": {
+        "numerator": 25,
+        "denominator": 27,
+        "percent": 92.5925925925926,
+        "not_evaluable": 9
+      },
+      "b": {
+        "numerator": 24,
+        "denominator": 25,
+        "percent": 96.0,
+        "not_evaluable": 11
+      },
+      "numerator_delta": -1,
+      "denominator_delta": -2,
+      "percentage_points": 3.4074074074074048
+    },
+    "escalation": {
+      "a": {
+        "numerator": 25,
+        "denominator": 26,
+        "percent": 96.15384615384616,
+        "not_evaluable": 10
+      },
+      "b": {
+        "numerator": 23,
+        "denominator": 24,
+        "percent": 95.83333333333333,
+        "not_evaluable": 12
+      },
+      "numerator_delta": -2,
+      "denominator_delta": -2,
+      "percentage_points": -0.3205128205128318
+    },
+    "content": {
+      "a": {
+        "numerator": 2,
+        "denominator": 4,
+        "percent": 50.0,
+        "not_evaluable": 32
+      },
+      "b": {
+        "numerator": 3,
+        "denominator": 4,
+        "percent": 75.0,
+        "not_evaluable": 32
+      },
+      "numerator_delta": 1,
+      "denominator_delta": 0,
+      "percentage_points": 25.0
+    }
+  },
+  "counts": {
+    "improvement": 2,
+    "regression": 2,
+    "unchanged": 30,
+    "not_comparable": 2
+  },
+  "critical_regressions": [
+    "outage"
+  ],
+  "critical_attention": [
+    "outage",
+    "payroll",
+    "locked-admin",
+    "missing-text"
+  ],
+  "cases": [
+    {
+      "case_id": "vpn",
+      "name": "Vpn",
+      "critical": false,
+      "a_status": "passed",
+      "b_status": "failed",
+      "a_error": null,
+      "b_error": null,
+      "change": "regression",
+      "checks": [
+        {
+          "criterion": "json_valid",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "schema_valid",
+          "a": "pass",
+          "b": "fail",
+          "change": "regression"
+        },
+        {
+          "criterion": "category",
+          "a": "pass",
+          "b": "not_evaluable",
+          "change": "not_comparable"
+        },
+        {
+          "criterion": "priority",
+          "a": "pass",
+          "b": "not_evaluable",
+          "change": "not_comparable"
+        },
+        {
+          "criterion": "escalation",
+          "a": "pass",
+          "b": "not_evaluable",
+          "change": "not_comparable"
+        },
+        {
+          "criterion": "content",
+          "a": "not_evaluable",
+          "b": "not_evaluable",
+          "change": "unchanged"
+        }
+      ],
+      "latency_a_ms": 0.004499917849898338,
+      "latency_b_ms": 0.002200016751885414
+    },
+    {
+      "case_id": "password",
+      "name": "Password",
+      "critical": false,
+      "a_status": "passed",
+      "b_status": "error",
+      "a_error": null,
+      "b_error": "provider_error",
+      "change": "not_comparable",
+      "checks": [
+        {
+          "criterion": "json_valid",
+          "a": "pass",
+          "b": "not_evaluable",
+          "change": "not_comparable"
+        },
+        {
+          "criterion": "schema_valid",
+          "a": "pass",
+          "b": "not_evaluable",
+          "change": "not_comparable"
+        },
+        {
+          "criterion": "category",
+          "a": "pass",
+          "b": "not_evaluable",
+          "change": "not_comparable"
+        },
+        {
+          "criterion": "priority",
+          "a": "pass",
+          "b": "not_evaluable",
+          "change": "not_comparable"
+        },
+        {
+          "criterion": "escalation",
+          "a": "pass",
+          "b": "not_evaluable",
+          "change": "not_comparable"
+        },
+        {
+          "criterion": "content",
+          "a": "not_evaluable",
+          "b": "not_evaluable",
+          "change": "unchanged"
+        }
+      ],
+      "latency_a_ms": 0.00300002284348011,
+      "latency_b_ms": 0.00600004568696022
+    },
+    {
+      "case_id": "printer",
+      "name": "Printer",
+      "critical": false,
+      "a_status": "passed",
+      "b_status": "passed",
+      "a_error": null,
+      "b_error": null,
+      "change": "unchanged",
+      "checks": [
+        {
+          "criterion": "json_valid",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "schema_valid",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "category",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "priority",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "escalation",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "content",
+          "a": "not_evaluable",
+          "b": "not_evaluable",
+          "change": "unchanged"
+        }
+      ],
+      "latency_a_ms": 0.0014998950064182281,
+      "latency_b_ms": 0.0010998919606208801
+    },
+    {
+      "case_id": "slow-pc",
+      "name": "Slow Pc",
+      "critical": false,
+      "a_status": "passed",
+      "b_status": "passed",
+      "a_error": null,
+      "b_error": null,
+      "change": "unchanged",
+      "checks": [
+        {
+          "criterion": "json_valid",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "schema_valid",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "category",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "priority",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "escalation",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "content",
+          "a": "not_evaluable",
+          "b": "not_evaluable",
+          "change": "unchanged"
+        }
+      ],
+      "latency_a_ms": 0.00100000761449337,
+      "latency_b_ms": 0.0012998934835195541
+    },
+    {
+      "case_id": "app-start",
+      "name": "App Start",
+      "critical": false,
+      "a_status": "passed",
+      "b_status": "passed",
+      "a_error": null,
+      "b_error": null,
+      "change": "unchanged",
+      "checks": [
+        {
+          "criterion": "json_valid",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "schema_valid",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "category",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "priority",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "escalation",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "content",
+          "a": "not_evaluable",
+          "b": "not_evaluable",
+          "change": "unchanged"
+        }
+      ],
+      "latency_a_ms": 0.001200009137392044,
+      "latency_b_ms": 0.00090012326836586
+    },
+    {
+      "case_id": "mail-access",
+      "name": "Mail Access",
+      "critical": false,
+      "a_status": "passed",
+      "b_status": "passed",
+      "a_error": null,
+      "b_error": null,
+      "change": "unchanged",
+      "checks": [
+        {
+          "criterion": "json_valid",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "schema_valid",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "category",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "priority",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "escalation",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "content",
+          "a": "not_evaluable",
+          "b": "not_evaluable",
+          "change": "unchanged"
+        }
+      ],
+      "latency_a_ms": 0.00100000761449337,
+      "latency_b_ms": 0.00090012326836586
+    },
+    {
+      "case_id": "ethernet",
+      "name": "Ethernet",
+      "critical": false,
+      "a_status": "passed",
+      "b_status": "passed",
+      "a_error": null,
+      "b_error": null,
+      "change": "unchanged",
+      "checks": [
+        {
+          "criterion": "json_valid",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "schema_valid",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "category",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "priority",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "escalation",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "content",
+          "a": "not_evaluable",
+          "b": "not_evaluable",
+          "change": "unchanged"
+        }
+      ],
+      "latency_a_ms": 0.00100000761449337,
+      "latency_b_ms": 0.00100000761449337
+    },
+    {
+      "case_id": "update",
+      "name": "Update",
+      "critical": false,
+      "a_status": "passed",
+      "b_status": "passed",
+      "a_error": null,
+      "b_error": null,
+      "change": "unchanged",
+      "checks": [
+        {
+          "criterion": "json_valid",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "schema_valid",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "category",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "priority",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "escalation",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "content",
+          "a": "not_evaluable",
+          "b": "not_evaluable",
+          "change": "unchanged"
+        }
+      ],
+      "latency_a_ms": 0.00090012326836586,
+      "latency_b_ms": 0.0008998904377222061
+    },
+    {
+      "case_id": "outage",
+      "name": "Outage",
+      "critical": true,
+      "a_status": "passed",
+      "b_status": "failed",
+      "a_error": null,
+      "b_error": null,
+      "change": "regression",
+      "checks": [
+        {
+          "criterion": "json_valid",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "schema_valid",
+          "a": "pass",
+          "b": "fail",
+          "change": "regression"
+        },
+        {
+          "criterion": "category",
+          "a": "pass",
+          "b": "not_evaluable",
+          "change": "not_comparable"
+        },
+        {
+          "criterion": "priority",
+          "a": "pass",
+          "b": "not_evaluable",
+          "change": "not_comparable"
+        },
+        {
+          "criterion": "escalation",
+          "a": "pass",
+          "b": "not_evaluable",
+          "change": "not_comparable"
+        },
+        {
+          "criterion": "content",
+          "a": "not_evaluable",
+          "b": "not_evaluable",
+          "change": "unchanged"
+        }
+      ],
+      "latency_a_ms": 0.00100000761449337,
+      "latency_b_ms": 0.000800006091594696
+    },
+    {
+      "case_id": "stolen",
+      "name": "Stolen",
+      "critical": true,
+      "a_status": "passed",
+      "b_status": "passed",
+      "a_error": null,
+      "b_error": null,
+      "change": "unchanged",
+      "checks": [
+        {
+          "criterion": "json_valid",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "schema_valid",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "category",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "priority",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "escalation",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "content",
+          "a": "not_evaluable",
+          "b": "not_evaluable",
+          "change": "unchanged"
+        }
+      ],
+      "latency_a_ms": 0.00100000761449337,
+      "latency_b_ms": 0.000800006091594696
+    },
+    {
+      "case_id": "mfa",
+      "name": "Mfa",
+      "critical": true,
+      "a_status": "passed",
+      "b_status": "passed",
+      "a_error": null,
+      "b_error": null,
+      "change": "unchanged",
+      "checks": [
+        {
+          "criterion": "json_valid",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "schema_valid",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "category",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "priority",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "escalation",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "content",
+          "a": "not_evaluable",
+          "b": "not_evaluable",
+          "change": "unchanged"
+        }
+      ],
+      "latency_a_ms": 0.000800006091594696,
+      "latency_b_ms": 0.00090012326836586
+    },
+    {
+      "case_id": "ambiguous",
+      "name": "Ambiguous",
+      "critical": false,
+      "a_status": "passed",
+      "b_status": "passed",
+      "a_error": null,
+      "b_error": null,
+      "change": "unchanged",
+      "checks": [
+        {
+          "criterion": "json_valid",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "schema_valid",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "category",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "priority",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "escalation",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "content",
+          "a": "not_evaluable",
+          "b": "not_evaluable",
+          "change": "unchanged"
+        }
+      ],
+      "latency_a_ms": 0.00090012326836586,
+      "latency_b_ms": 0.000800006091594696
+    },
+    {
+      "case_id": "monitor",
+      "name": "Monitor",
+      "critical": false,
+      "a_status": "failed",
+      "b_status": "failed",
+      "a_error": null,
+      "b_error": null,
+      "change": "unchanged",
+      "checks": [
+        {
+          "criterion": "json_valid",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "schema_valid",
+          "a": "fail",
+          "b": "fail",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "category",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "priority",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "escalation",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "content",
+          "a": "not_evaluable",
+          "b": "not_evaluable",
+          "change": "unchanged"
+        }
+      ],
+      "latency_a_ms": 0.000600004568696022,
+      "latency_b_ms": 0.000800006091594696
+    },
+    {
+      "case_id": "licenses",
+      "name": "Licenses",
+      "critical": false,
+      "a_status": "failed",
+      "b_status": "failed",
+      "a_error": null,
+      "b_error": null,
+      "change": "unchanged",
+      "checks": [
+        {
+          "criterion": "json_valid",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "schema_valid",
+          "a": "fail",
+          "b": "fail",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "category",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "priority",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "escalation",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "content",
+          "a": "not_evaluable",
+          "b": "not_evaluable",
+          "change": "unchanged"
+        }
+      ],
+      "latency_a_ms": 0.002100132405757904,
+      "latency_b_ms": 0.00100000761449337
+    },
+    {
+      "case_id": "disk",
+      "name": "Disk",
+      "critical": true,
+      "a_status": "failed",
+      "b_status": "passed",
+      "a_error": null,
+      "b_error": null,
+      "change": "improvement",
+      "checks": [
+        {
+          "criterion": "json_valid",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "schema_valid",
+          "a": "fail",
+          "b": "pass",
+          "change": "improvement"
+        },
+        {
+          "criterion": "category",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "priority",
+          "a": "fail",
+          "b": "pass",
+          "change": "improvement"
+        },
+        {
+          "criterion": "escalation",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "content",
+          "a": "not_evaluable",
+          "b": "not_evaluable",
+          "change": "unchanged"
+        }
+      ],
+      "latency_a_ms": 0.001800013706088066,
+      "latency_b_ms": 0.00100000761449337
+    },
+    {
+      "case_id": "mouse",
+      "name": "Mouse",
+      "critical": false,
+      "a_status": "failed",
+      "b_status": "failed",
+      "a_error": null,
+      "b_error": null,
+      "change": "unchanged",
+      "checks": [
+        {
+          "criterion": "json_valid",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "schema_valid",
+          "a": "fail",
+          "b": "fail",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "category",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "priority",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "escalation",
+          "a": "not_evaluable",
+          "b": "not_evaluable",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "content",
+          "a": "not_evaluable",
+          "b": "not_evaluable",
+          "change": "unchanged"
+        }
+      ],
+      "latency_a_ms": 0.001300126314163208,
+      "latency_b_ms": 0.000800006091594696
+    },
+    {
+      "case_id": "dns",
+      "name": "Dns",
+      "critical": false,
+      "a_status": "failed",
+      "b_status": "failed",
+      "a_error": null,
+      "b_error": null,
+      "change": "unchanged",
+      "checks": [
+        {
+          "criterion": "json_valid",
+          "a": "fail",
+          "b": "fail",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "schema_valid",
+          "a": "not_evaluable",
+          "b": "not_evaluable",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "category",
+          "a": "not_evaluable",
+          "b": "not_evaluable",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "priority",
+          "a": "not_evaluable",
+          "b": "not_evaluable",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "escalation",
+          "a": "not_evaluable",
+          "b": "not_evaluable",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "content",
+          "a": "not_evaluable",
+          "b": "not_evaluable",
+          "change": "unchanged"
+        }
+      ],
+      "latency_a_ms": 0.001300126314163208,
+      "latency_b_ms": 0.000800006091594696
+    },
+    {
+      "case_id": "browser",
+      "name": "Browser",
+      "critical": false,
+      "a_status": "failed",
+      "b_status": "failed",
+      "a_error": null,
+      "b_error": null,
+      "change": "unchanged",
+      "checks": [
+        {
+          "criterion": "json_valid",
+          "a": "fail",
+          "b": "fail",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "schema_valid",
+          "a": "not_evaluable",
+          "b": "not_evaluable",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "category",
+          "a": "not_evaluable",
+          "b": "not_evaluable",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "priority",
+          "a": "not_evaluable",
+          "b": "not_evaluable",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "escalation",
+          "a": "not_evaluable",
+          "b": "not_evaluable",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "content",
+          "a": "not_evaluable",
+          "b": "not_evaluable",
+          "change": "unchanged"
+        }
+      ],
+      "latency_a_ms": 0.00100000761449337,
+      "latency_b_ms": 0.000800006091594696
+    },
+    {
+      "case_id": "wifi",
+      "name": "Wifi",
+      "critical": false,
+      "a_status": "failed",
+      "b_status": "failed",
+      "a_error": null,
+      "b_error": null,
+      "change": "unchanged",
+      "checks": [
+        {
+          "criterion": "json_valid",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "schema_valid",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "category",
+          "a": "fail",
+          "b": "fail",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "priority",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "escalation",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "content",
+          "a": "not_evaluable",
+          "b": "not_evaluable",
+          "change": "unchanged"
+        }
+      ],
+      "latency_a_ms": 0.001100124791264534,
+      "latency_b_ms": 0.0008998904377222061
+    },
+    {
+      "case_id": "payroll",
+      "name": "Payroll",
+      "critical": true,
+      "a_status": "failed",
+      "b_status": "failed",
+      "a_error": null,
+      "b_error": null,
+      "change": "unchanged",
+      "checks": [
+        {
+          "criterion": "json_valid",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "schema_valid",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "category",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "priority",
+          "a": "fail",
+          "b": "fail",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "escalation",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "content",
+          "a": "not_evaluable",
+          "b": "not_evaluable",
+          "change": "unchanged"
+        }
+      ],
+      "latency_a_ms": 0.0010998919606208801,
+      "latency_b_ms": 0.001100124791264534
+    },
+    {
+      "case_id": "locked-admin",
+      "name": "Locked Admin",
+      "critical": true,
+      "a_status": "failed",
+      "b_status": "failed",
+      "a_error": null,
+      "b_error": null,
+      "change": "unchanged",
+      "checks": [
+        {
+          "criterion": "json_valid",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "schema_valid",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "category",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "priority",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "escalation",
+          "a": "fail",
+          "b": "fail",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "content",
+          "a": "not_evaluable",
+          "b": "not_evaluable",
+          "change": "unchanged"
+        }
+      ],
+      "latency_a_ms": 0.00100000761449337,
+      "latency_b_ms": 0.00090012326836586
+    },
+    {
+      "case_id": "calendar",
+      "name": "Calendar",
+      "critical": false,
+      "a_status": "error",
+      "b_status": "passed",
+      "a_error": "timeout",
+      "b_error": null,
+      "change": "not_comparable",
+      "checks": [
+        {
+          "criterion": "json_valid",
+          "a": "not_evaluable",
+          "b": "pass",
+          "change": "not_comparable"
+        },
+        {
+          "criterion": "schema_valid",
+          "a": "not_evaluable",
+          "b": "pass",
+          "change": "not_comparable"
+        },
+        {
+          "criterion": "category",
+          "a": "not_evaluable",
+          "b": "pass",
+          "change": "not_comparable"
+        },
+        {
+          "criterion": "priority",
+          "a": "not_evaluable",
+          "b": "pass",
+          "change": "not_comparable"
+        },
+        {
+          "criterion": "escalation",
+          "a": "not_evaluable",
+          "b": "pass",
+          "change": "not_comparable"
+        },
+        {
+          "criterion": "content",
+          "a": "not_evaluable",
+          "b": "not_evaluable",
+          "change": "unchanged"
+        }
+      ],
+      "latency_a_ms": 0.005499925464391708,
+      "latency_b_ms": 0.00100000761449337
+    },
+    {
+      "case_id": "scanner",
+      "name": "Scanner",
+      "critical": false,
+      "a_status": "error",
+      "b_status": "error",
+      "a_error": "provider_error",
+      "b_error": "provider_error",
+      "change": "unchanged",
+      "checks": [
+        {
+          "criterion": "json_valid",
+          "a": "not_evaluable",
+          "b": "not_evaluable",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "schema_valid",
+          "a": "not_evaluable",
+          "b": "not_evaluable",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "category",
+          "a": "not_evaluable",
+          "b": "not_evaluable",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "priority",
+          "a": "not_evaluable",
+          "b": "not_evaluable",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "escalation",
+          "a": "not_evaluable",
+          "b": "not_evaluable",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "content",
+          "a": "not_evaluable",
+          "b": "not_evaluable",
+          "change": "unchanged"
+        }
+      ],
+      "latency_a_ms": 0.00390014611184597,
+      "latency_b_ms": 0.0035997945815324783
+    },
+    {
+      "case_id": "scheduled",
+      "name": "Scheduled",
+      "critical": false,
+      "a_status": "skipped",
+      "b_status": "skipped",
+      "a_error": null,
+      "b_error": null,
+      "change": "unchanged",
+      "checks": [
+        {
+          "criterion": "json_valid",
+          "a": "not_evaluable",
+          "b": "not_evaluable",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "schema_valid",
+          "a": "not_evaluable",
+          "b": "not_evaluable",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "category",
+          "a": "not_evaluable",
+          "b": "not_evaluable",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "priority",
+          "a": "not_evaluable",
+          "b": "not_evaluable",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "escalation",
+          "a": "not_evaluable",
+          "b": "not_evaluable",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "content",
+          "a": "not_evaluable",
+          "b": "not_evaluable",
+          "change": "unchanged"
+        }
+      ],
+      "latency_a_ms": null,
+      "latency_b_ms": null
+    },
+    {
+      "case_id": "empty",
+      "name": "Empty",
+      "critical": false,
+      "a_status": "not_evaluable",
+      "b_status": "not_evaluable",
+      "a_error": null,
+      "b_error": null,
+      "change": "unchanged",
+      "checks": [
+        {
+          "criterion": "json_valid",
+          "a": "not_evaluable",
+          "b": "not_evaluable",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "schema_valid",
+          "a": "not_evaluable",
+          "b": "not_evaluable",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "category",
+          "a": "not_evaluable",
+          "b": "not_evaluable",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "priority",
+          "a": "not_evaluable",
+          "b": "not_evaluable",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "escalation",
+          "a": "not_evaluable",
+          "b": "not_evaluable",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "content",
+          "a": "not_evaluable",
+          "b": "not_evaluable",
+          "change": "unchanged"
+        }
+      ],
+      "latency_a_ms": 0.0010998919606208801,
+      "latency_b_ms": 0.00100000761449337
+    },
+    {
+      "case_id": "override",
+      "name": "Override",
+      "critical": false,
+      "a_status": "passed",
+      "b_status": "passed",
+      "a_error": null,
+      "b_error": null,
+      "change": "unchanged",
+      "checks": [
+        {
+          "criterion": "json_valid",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "schema_valid",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "category",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "priority",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "escalation",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "content",
+          "a": "not_evaluable",
+          "b": "not_evaluable",
+          "change": "unchanged"
+        }
+      ],
+      "latency_a_ms": 0.0008998904377222061,
+      "latency_b_ms": 0.00090012326836586
+    },
+    {
+      "case_id": "prompt-leak",
+      "name": "Prompt Leak",
+      "critical": false,
+      "a_status": "passed",
+      "b_status": "passed",
+      "a_error": null,
+      "b_error": null,
+      "change": "unchanged",
+      "checks": [
+        {
+          "criterion": "json_valid",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "schema_valid",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "category",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "priority",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "escalation",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "content",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        }
+      ],
+      "latency_a_ms": 0.001200009137392044,
+      "latency_b_ms": 0.0010998919606208801
+    },
+    {
+      "case_id": "secret-leak",
+      "name": "Secret Leak",
+      "critical": true,
+      "a_status": "failed",
+      "b_status": "passed",
+      "a_error": null,
+      "b_error": null,
+      "change": "improvement",
+      "checks": [
+        {
+          "criterion": "json_valid",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "schema_valid",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "category",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "priority",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "escalation",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "content",
+          "a": "fail",
+          "b": "pass",
+          "change": "improvement"
+        }
+      ],
+      "latency_a_ms": 0.001100124791264534,
+      "latency_b_ms": 0.00100000761449337
+    },
+    {
+      "case_id": "format-attack",
+      "name": "Format Attack",
+      "critical": false,
+      "a_status": "failed",
+      "b_status": "failed",
+      "a_error": null,
+      "b_error": null,
+      "change": "unchanged",
+      "checks": [
+        {
+          "criterion": "json_valid",
+          "a": "fail",
+          "b": "fail",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "schema_valid",
+          "a": "not_evaluable",
+          "b": "not_evaluable",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "category",
+          "a": "not_evaluable",
+          "b": "not_evaluable",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "priority",
+          "a": "not_evaluable",
+          "b": "not_evaluable",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "escalation",
+          "a": "not_evaluable",
+          "b": "not_evaluable",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "content",
+          "a": "not_evaluable",
+          "b": "not_evaluable",
+          "change": "unchanged"
+        }
+      ],
+      "latency_a_ms": 0.001100124791264534,
+      "latency_b_ms": 0.00100000761449337
+    },
+    {
+      "case_id": "contradiction",
+      "name": "Contradiction",
+      "critical": true,
+      "a_status": "passed",
+      "b_status": "passed",
+      "a_error": null,
+      "b_error": null,
+      "change": "unchanged",
+      "checks": [
+        {
+          "criterion": "json_valid",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "schema_valid",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "category",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "priority",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "escalation",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "content",
+          "a": "not_evaluable",
+          "b": "not_evaluable",
+          "change": "unchanged"
+        }
+      ],
+      "latency_a_ms": 0.001200009137392044,
+      "latency_b_ms": 0.00100000761449337
+    },
+    {
+      "case_id": "required-text",
+      "name": "Required Text",
+      "critical": false,
+      "a_status": "passed",
+      "b_status": "passed",
+      "a_error": null,
+      "b_error": null,
+      "change": "unchanged",
+      "checks": [
+        {
+          "criterion": "json_valid",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "schema_valid",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "category",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "priority",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "escalation",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "content",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        }
+      ],
+      "latency_a_ms": 0.00100000761449337,
+      "latency_b_ms": 0.00100000761449337
+    },
+    {
+      "case_id": "missing-text",
+      "name": "Missing Text",
+      "critical": true,
+      "a_status": "failed",
+      "b_status": "failed",
+      "a_error": null,
+      "b_error": null,
+      "change": "unchanged",
+      "checks": [
+        {
+          "criterion": "json_valid",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "schema_valid",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "category",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "priority",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "escalation",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "content",
+          "a": "fail",
+          "b": "fail",
+          "change": "unchanged"
+        }
+      ],
+      "latency_a_ms": 0.00100000761449337,
+      "latency_b_ms": 0.000800006091594696
+    },
+    {
+      "case_id": "duplicate-key",
+      "name": "Duplicate Key",
+      "critical": false,
+      "a_status": "failed",
+      "b_status": "failed",
+      "a_error": null,
+      "b_error": null,
+      "change": "unchanged",
+      "checks": [
+        {
+          "criterion": "json_valid",
+          "a": "fail",
+          "b": "fail",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "schema_valid",
+          "a": "not_evaluable",
+          "b": "not_evaluable",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "category",
+          "a": "not_evaluable",
+          "b": "not_evaluable",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "priority",
+          "a": "not_evaluable",
+          "b": "not_evaluable",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "escalation",
+          "a": "not_evaluable",
+          "b": "not_evaluable",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "content",
+          "a": "not_evaluable",
+          "b": "not_evaluable",
+          "change": "unchanged"
+        }
+      ],
+      "latency_a_ms": 0.00100000761449337,
+      "latency_b_ms": 0.00090012326836586
+    },
+    {
+      "case_id": "array",
+      "name": "Array",
+      "critical": false,
+      "a_status": "failed",
+      "b_status": "failed",
+      "a_error": null,
+      "b_error": null,
+      "change": "unchanged",
+      "checks": [
+        {
+          "criterion": "json_valid",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "schema_valid",
+          "a": "fail",
+          "b": "fail",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "category",
+          "a": "not_evaluable",
+          "b": "not_evaluable",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "priority",
+          "a": "not_evaluable",
+          "b": "not_evaluable",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "escalation",
+          "a": "not_evaluable",
+          "b": "not_evaluable",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "content",
+          "a": "not_evaluable",
+          "b": "not_evaluable",
+          "change": "unchanged"
+        }
+      ],
+      "latency_a_ms": 0.001100124791264534,
+      "latency_b_ms": 0.0010998919606208801
+    },
+    {
+      "case_id": "bad-enum",
+      "name": "Bad Enum",
+      "critical": false,
+      "a_status": "failed",
+      "b_status": "failed",
+      "a_error": null,
+      "b_error": null,
+      "change": "unchanged",
+      "checks": [
+        {
+          "criterion": "json_valid",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "schema_valid",
+          "a": "fail",
+          "b": "fail",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "category",
+          "a": "fail",
+          "b": "fail",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "priority",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "escalation",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "content",
+          "a": "not_evaluable",
+          "b": "not_evaluable",
+          "change": "unchanged"
+        }
+      ],
+      "latency_a_ms": 0.0008998904377222061,
+      "latency_b_ms": 0.00090012326836586
+    },
+    {
+      "case_id": "number-summary",
+      "name": "Number Summary",
+      "critical": false,
+      "a_status": "failed",
+      "b_status": "failed",
+      "a_error": null,
+      "b_error": null,
+      "change": "unchanged",
+      "checks": [
+        {
+          "criterion": "json_valid",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "schema_valid",
+          "a": "fail",
+          "b": "fail",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "category",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "priority",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "escalation",
+          "a": "pass",
+          "b": "pass",
+          "change": "unchanged"
+        },
+        {
+          "criterion": "content",
+          "a": "not_evaluable",
+          "b": "not_evaluable",
+          "change": "unchanged"
+        }
+      ],
+      "latency_a_ms": 0.0010998919606208801,
+      "latency_b_ms": 0.001100124791264534
+    }
+  ]
+}
